@@ -9,7 +9,8 @@
 <body>
     <div class="container mt-5">
         <h2 class="text-center">Formulario de Contacto</h2>
-        <form>
+        <form action="/crear-contacto" method="POST">            
+            @csrf
             <div class="mb-3">
                 <label for="email" class="form-label">Correo Electrónico</label>
                 <input type="email" class="form-control" id="email" placeholder="Ingrese su correo">
